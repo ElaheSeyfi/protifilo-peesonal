@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family:anton ;
+    src: url("../font/anton.ttf") format("opentype");
+  }
+@font-face {
+    font-family:outline ;
+    src: url("../font/outline.ttf") format("opentype");
+  }
+@font-face {
+    font-family:regular ;
+    src: url("../font/Regular.ttf") format("opentype");
+  }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.outline-text{
+  color: rgba(0, 0, 0, 0);
+  padding-right: 5px;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    transition: text-shadow .3s;
+      &:hover{
+        text-shadow: 6px 6px #000;
+      }
+}
+.outline-section {
+  color: rgba(0, 0, 0, 0);
+  padding-right: 5px;
+  -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffffff;
+    transition: text-shadow .3s;
+      &:hover{
+        text-shadow: 6px 6px #fff;
+      }
+}
